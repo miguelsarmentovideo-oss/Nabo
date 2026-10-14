@@ -169,6 +169,7 @@ a{color:inherit}
   .nav-links.open{display:flex}
   .nav-links a{padding:16px 0;border-bottom:1px solid var(--border-on-night);font-size:22px}
   .hero{min-height:88vh}
+  .hero-photo img{object-position:50% 100%}
   .hero-content{padding-bottom:var(--space-8)}
   .hero-stamp{top:96px;bottom:auto;font-size:15px}
   .strip .btn-ghost{margin-left:0}
