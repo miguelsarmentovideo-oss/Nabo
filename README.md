@@ -1,27 +1,20 @@
-# Nabo — Base du site
+# Nabo Gastro Bar — nabobergen.no
 
-Site statique en norvégien (bokmål) par défaut et en anglais, en HTML, CSS et JavaScript, sans dépendances ni installation.
-Ouvrir `index.html` directement dans un navigateur pour le consulter.
+One-page website for Nabo Gastro Bar, Strandgaten 87, Bergen. Plain HTML, CSS and a few lines of JavaScript. No build step.
 
-## Fichiers
+Built on the **Nabo Gastro Bar Design System** (Claude Design): colours (copper, night, cream, glow), type (Big Shoulders Display, Instrument Serif, Hanken Grotesk via Google Fonts), pill buttons with hard "stamp" shadows. All copy is in English, British spelling.
 
-- `index.html` : navigation, accueil, aperçu du menu, présentation, contact et horaires, pied de page.
-- `styles.css` : mise en page responsive et variables visuelles regroupées au début du fichier.
+## Files
 
-`script.js` traduit les textes, les libellés accessibles et les métadonnées. Le sélecteur de langue mémorise le choix si le navigateur autorise le stockage local. Sans JavaScript, le site reste disponible en norvégien et le sélecteur est masqué. Les liens de navigation fonctionnent nativement, y compris sur mobile. Aucun service externe, police distante ou image n'est chargé.
+- `index.html` — the whole page: hero, hours strip, about, menu, photos, visit, Instagram, footer
+- `styles.css` — design tokens at the top, then sections
+- `script.js` — mobile menu toggle
+- `assets/logo/` — `nabo-logo-on-dark.png` (cream shadow, for dark backgrounds) and `nabo-logo.png` (original)
+- `assets/venue/` — venue photos (`*.webp` full size, `*-sm.webp` for smaller slots)
+- `assets/gallery/` — older food photos, not used on the page right now
 
-Pour ajouter un texte traduit, lui attribuer une clé `data-i18n` dans le HTML et ajouter cette même clé aux dictionnaires `en` et `nb` dans `script.js`. Conserver les textes norvégiens du HTML en accord avec le dictionnaire `nb`, y compris les libellés accessibles et la description. Une ancienne préférence française ou une valeur inconnue revient au norvégien ; un choix anglais enregistré reste respecté. Pour les attributs `aria-label`, utiliser `data-i18n-label`.
+## Updating
 
-## Personnaliser
-
-1. Modifier les textes dans `index.html`. Les commentaires signalent les contenus à compléter.
-2. Ajouter le vrai menu, la présentation, l'adresse, les horaires et les coordonnées. Les informations inconnues sont explicitement marquées comme à venir.
-3. Lorsque les coordonnées sont disponibles, ajouter des liens `tel:` et `mailto:` avec leurs vraies valeurs. Ajouter un lien de réservation uniquement lorsqu'une destination existe.
-4. Modifier les variables au début de `styles.css` pour changer couleurs, police, largeur et espacements.
-5. Mettre à jour le titre, la description et l'année du pied de page au besoin.
-
-## Accessibilité et adaptation
-
-La page utilise des régions sémantiques, des titres hiérarchisés, un lien d'accès direct au contenu, des indicateurs de focus visibles et une navigation toujours disponible. Les colonnes passent sur une seule colonne sur les petits écrans. Aucune animation n'est utilisée.
-
-Cette base est locale et n'est pas publiée. Les fichiers sous `sources/` restent des références en lecture seule.
+- **Menu / prices:** edit the `<article class="dish">` blocks in the Menu section of `index.html`.
+- **Opening hours:** change both the hours strip near the top and the Visit section, plus the `openingHoursSpecification` block in `<head>`.
+- **Booking link:** search for `booking.gastroplanner.no`.
