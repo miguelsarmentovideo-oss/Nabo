@@ -129,6 +129,7 @@ a{color:inherit}
 .hours dt{font:italic 400 26px/1.2 var(--font-serif);color:var(--cream-100)}
 .hours dd{margin:0;padding-left:24px!important;text-align:right;font:800 30px/1 var(--font-display);letter-spacing:.02em;color:var(--cream-50)}
 .hours dd small{display:block;margin-top:6px;font:400 14px/1.2 var(--font-body);letter-spacing:0;color:var(--cream-300)}
+.hours dd small:not(:last-child){margin-bottom:14px}
 .find{padding:var(--space-7);background:var(--night-800);border:1.5px solid var(--night-950);box-shadow:6px 6px 0 var(--copper-500);align-self:start}
 .find address{font-style:normal;font:400 19px/1.5 var(--font-body);margin:var(--space-4) 0}
 .contact{list-style:none;margin:0 0 var(--space-6);padding:0;display:grid;gap:6px}

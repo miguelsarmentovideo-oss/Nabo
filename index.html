@@ -22,8 +22,9 @@
    "acceptsReservations":"https://booking.gastroplanner.no/Nabo/t",
    "sameAs":["https://www.instagram.com/nabobergen/"],
    "openingHoursSpecification":[
-     {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"15:00"},
-     {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"14:00","closes":"22:00"}]}
+     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Friday","Saturday"],"opens":"10:00","closes":"15:00"},
+     {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"21:30"},
+     {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"16:00","closes":"22:00"}]}
   </script>
 </head>
 <body>
@@ -69,8 +70,10 @@
   <!-- HOURS STRIP -->
   <section class="strip" aria-label="Opening hours">
     <div class="wrap strip-inner">
-      <div><span class="label">Sunday–Thursday</span><span class="strip-time">From 15:00</span><span class="strip-note">Kitchen closes 21:30</span></div>
-      <div><span class="label">Friday–Saturday</span><span class="strip-time">14:00–22:00</span></div>
+      <div><span class="label">Brunch · Monday–Saturday</span><span class="strip-time">10:00–15:00</span></div>
+      <div><span class="label">Dinner · Tuesday–Thursday</span><span class="strip-time">15:00–21:30</span></div>
+      <div><span class="label">Dinner · Friday–Saturday</span><span class="strip-time">16:00–22:00</span></div>
+      <div><span class="label">Sunday</span><span class="strip-time">Closed</span></div>
       <a class="btn btn-ghost" href="#visit">Find us →</a>
     </div>
   </section>
@@ -172,8 +175,10 @@
         <p class="kicker">Visit</p>
         <h2 class="display-l">Opening hours</h2>
         <dl class="hours">
-          <dt>Sunday–Thursday</dt><dd>From 15:00<small>Kitchen closes 21:30</small></dd>
-          <dt>Friday–Saturday</dt><dd>14:00–22:00</dd>
+          <dt>Monday</dt><dd>10:00–15:00<small>Brunch</small></dd>
+          <dt>Tuesday–Thursday</dt><dd>10:00–15:00<small>Brunch</small>15:00–21:30<small>Dinner</small></dd>
+          <dt>Friday–Saturday</dt><dd>10:00–15:00<small>Brunch</small>16:00–22:00<small>Dinner</small></dd>
+          <dt>Sunday</dt><dd>Closed</dd>
         </dl>
         <p class="small-muted">Booking recommended, walk-ins welcome when there's room.</p>
       </div>
