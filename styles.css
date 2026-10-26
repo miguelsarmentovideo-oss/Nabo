@@ -103,6 +103,8 @@ a{color:inherit}
 .menu{background:var(--night-950);padding:var(--space-10) 0;border-top:1px solid var(--border-on-night)}
 .menu-head{max-width:640px;margin-bottom:var(--space-8)}
 .menu-head .lede-s{margin-bottom:0}
+.menu-col{display:flex;flex-direction:column;gap:var(--space-9)}
+.menu-head-next{max-width:none;margin-top:var(--space-10);padding-top:var(--space-9);border-top:1px solid var(--border-on-night)}
 .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-9) var(--space-9)}
 .menu-section h3{font-size:44px;color:var(--cream-50);padding-bottom:12px;border-bottom:2px solid var(--copper-500)}
 .dish{padding:18px 0;border-bottom:1px solid var(--border-on-night)}
